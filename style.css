@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100&display=swap');
+
+*{
+    margin: 0%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif; 
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+}
+body{
+    line-height: 1.6;
+    
+}
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin:40px 0 60px 0;
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+#search-input{
+    width:60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border:none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;    border-radius: 5px;
+    font-size: 18px;
+    color:#333
+}
+#search-button{
+    padding: 10px 20px;
+    background-color: palevioletred;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;    font-size: 18px;;
+    color:white;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.search-results {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px; /* Added margin-top for spacing */
+}
+
+.search-result {
+    margin-bottom: 20px;
+    width: calc(33.33% - 20px); /* Adjusted width to fit three items per row with some spacing */
+    height: 310px;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;    overflow: hidden;
+}
+
+.search-result img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.search-result a {
+    display: block;
+    padding: 10px; /* Added padding for better text readability */
+    color: #333; /* Changed text color for better readability */
+    text-decoration: none;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.9); /* Added background to improve text contrast */
+    transition: background 0.2s ease-in-out;
+}
+
+.search-result a:hover {
+    background: rgba(255, 255, 255, 0.7); /* Darkened background on hover for better feedback */
+}
+
+.search-result:hover img{
+    opacity: 0.8;
+}
+
+.search-result a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#ShowMore{
+    background-color: palevioletred;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    border: none;
+    font-size: 18px;
+    color: whitesmoke;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    margin: 30px auto;
+    cursor: pointer;
+    align-content: center;
+}
+
+@media screen and (max-width: 768px){
+    .search-result{
+        width: 45%;
+    }
+    .search-results{
+        padding: 20px;
+    }
+
+}
+@media screen and (max-width: 480px){
+    .search-result{
+        width: 100%;
+    }
+
+}
+    
+
+
+
